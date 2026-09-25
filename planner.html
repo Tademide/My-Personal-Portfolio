@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Ada Obi</title>
+<meta name="description" content="Interactive academic planner to add, complete and delete study tasks.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Ada <span>Obi</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="main-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h1>Academic Planner</h1>
+      <p class="muted">Add assignments and readings, tick them off as you go, and clear finished ones. Tasks are saved in your browser.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <form id="task-form" class="planner-form" aria-label="Add a new task">
+        <label class="visually-hidden" for="task-input">Task description</label>
+        <input type="text" id="task-input" name="task" placeholder="e.g. Finish COS 106 term project" required>
+        <label class="visually-hidden" for="task-due">Due date</label>
+        <input type="date" id="task-due" name="due">
+        <button type="submit" class="btn gold">Add task</button>
+      </form>
+
+      <div class="planner-stats">
+        <span><strong id="stat-total">0</strong> total</span>
+        <span><strong id="stat-pending">0</strong> pending</span>
+        <span><strong id="stat-done">0</strong> completed</span>
+        <button type="button" id="clear-completed" class="btn ghost small">Clear completed</button>
+      </div>
+
+      <ul id="task-list" class="card"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Ada Obi. Built for COS 106 — Introduction to Web Technologies.</p>
+    <p><a href="contact.html">Contact me</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>

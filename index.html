@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayomide Oloruntade — Student Portfolio</title>
+<meta name="description" content="Personal academic portfolio and student management site for , Computer Science student.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Ayomide <span>Oloruntade</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="main-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Welcome to my portfolio</p>
+        <h1>Hi, I'm Ayomide Oloruntade</h1>
+        <p class="hero-bio">
+          I'm a second-year Computer Science student at the University of Lagos,
+          building small, useful things on the web while I learn the fundamentals.
+          This site is both my portfolio and my academic command centre — my
+          projects, my background, and the planner I use to keep coursework on track,
+          all in one place.
+        </p>
+        <p>
+          <a class="btn gold" href="projects.html">See my projects</a>
+          <a class="btn ghost" href="contact.html">Get in touch</a>
+        </p>
+      </div>
+
+      <figure class="portrait-frame">
+        <svg class="avatar-svg" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder portrait photograph">
+          <rect width="240" height="240" fill="#e9e2cd"/>
+          <circle cx="120" cy="95" r="46" fill="#c9982e"/>
+          <path d="M40 220c8-52 46-84 80-84s72 32 80 84z" fill="#1f3a2e"/>
+        </svg>
+        <figcaption>Ada, Lagos — 2026</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What you'll find here</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>About Me</h3>
+          <p>My academic background, career goals, technical skills, and the things I do outside of code.</p>
+          <a href="about.html">Read more →</a>
+        </div>
+        <div class="card">
+          <h3>Projects</h3>
+          <p>A handful of things I've built while learning HTML, CSS and JavaScript.</p>
+          <a href="projects.html">View projects →</a>
+        </div>
+        <div class="card">
+          <h3>Academic Planner</h3>
+          <p>An interactive to-do list I use to track assignments, readings and deadlines.</p>
+          <a href="planner.html">Open planner →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Ada Obi. Built for COS 106 — Introduction to Web Technologies.</p>
+    <p><a href="contact.html">Contact me</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

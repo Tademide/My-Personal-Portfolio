@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ada Obi</title>
+<meta name="description" content="Sample web development projects by Ada Obi, with descriptions and links.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Ada <span>Obi</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="main-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h1>Projects</h1>
+      <p class="muted">A few things I've built while learning. Screenshots are placeholders — swap in real ones from your own projects.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid-3">
+
+      <article class="card project-card">
+        <div class="project-thumb">Screenshot:<br>Task Tracker UI</div>
+        <h3>Campus Task Tracker</h3>
+        <p>A lightweight to-do app for students, built with vanilla JavaScript and
+        localStorage. The same logic that powers the Academic Planner on this site.</p>
+        <ul class="tag-list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn small" href="planner.html">Live demo</a>
+          <a class="btn small ghost" href="https://github.com/example/campus-task-tracker" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-thumb">Screenshot:<br>Recipe Finder App</div>
+        <h3>Recipe Finder</h3>
+        <p>A responsive recipe search app that pulls results from a public food API
+        and lets users filter by ingredient and cuisine.</p>
+        <ul class="tag-list">
+          <li>JavaScript</li><li>Fetch API</li><li>CSS Grid</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn small" href="#" target="_blank" rel="noopener">Live demo</a>
+          <a class="btn small ghost" href="https://github.com/example/recipe-finder" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-thumb">Screenshot:<br>Weather Dashboard</div>
+        <h3>Weather Dashboard</h3>
+        <p>A small dashboard showing a 5-day forecast for any city, with simple
+        icon-based weather states and a mobile-first layout.</p>
+        <ul class="tag-list">
+          <li>HTML</li><li>CSS Flexbox</li><li>JavaScript</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn small" href="#" target="_blank" rel="noopener">Live demo</a>
+          <a class="btn small ghost" href="https://github.com/example/weather-dashboard" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Walkthrough</h2>
+      <p>A short screen recording of the Campus Task Tracker in action (placeholder clip — replace <code>src</code> in <code>projects.html</code> with your own recording).</p>
+      <video controls width="480" poster="">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support embedded video. You can
+        <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">download the clip</a> instead.
+      </video>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Ada Obi. Built for COS 106 — Introduction to Web Technologies.</p>
+    <p><a href="contact.html">Contact me</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
