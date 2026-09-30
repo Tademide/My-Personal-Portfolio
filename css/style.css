@@ -149,7 +149,14 @@ nav.main-nav a[aria-current="page"] {
   margin-top: .5rem;
   font-size: .9rem;
 }
-.avatar-svg { width: 100%; height: auto; background: #e9e2cd; }
+
+.avatar-img {
+  width: 240px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
 
 /* ---------- Sections / cards ---------- */
 section { padding: 3rem 0; }
